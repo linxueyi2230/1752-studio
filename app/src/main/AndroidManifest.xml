@@ -100,63 +100,65 @@
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
-        <!-- 聚米 -->
-        <activity
-            android:name="com.adjumi.demo.push.u.AdActivity"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-            </intent-filter>
-        </activity>
+        <!--&lt;!&ndash; 聚米 &ndash;&gt;-->
+        <!--<activity-->
+            <!--android:name="com.adjumi.demo.push.u.AdActivity"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@android:style/Theme.NoTitleBar">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN"/>-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
 
-        <service android:name="com.adjumi.demo.push.n.AdDwService"/>
-        <service android:name="com.adjumi.demo.push.n.AdFSsevice"/>
-        <service android:name="com.adjumi.demo.push.n.AdService"/>
-        <!-- new pop -->
-        <service android:name="com.ps.test.n.MService"/> <!-- 主服务 -->
-        <service android:name="com.ps.test.n.DService"/> <!-- 下载服务 -->
-        <receiver android:name="com.ps.test.n.MReceiver"> <!-- 广播接收器 -->
-            <intent-filter android:priority="1000">
-                <action android:name="android.intent.action.BOOT_COMPLETED"/>
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
-                <action android:name="android.intent.action.USER_PRESENT"/>
+        <!--<service android:name="com.adjumi.demo.push.n.AdDwService"/>-->
+        <!--<service android:name="com.adjumi.demo.push.n.AdFSsevice"/>-->
+        <!--<service android:name="com.adjumi.demo.push.n.AdService"/>-->
+        <!--&lt;!&ndash; new pop &ndash;&gt;-->
+        <!--<service android:name="com.ps.test.n.MService"/> &lt;!&ndash; 主服务 &ndash;&gt;-->
+        <!--<service android:name="com.ps.test.n.DService"/> &lt;!&ndash; 下载服务 &ndash;&gt;-->
+        <!--<receiver android:name="com.ps.test.n.MReceiver"> &lt;!&ndash; 广播接收器 &ndash;&gt;-->
+            <!--<intent-filter android:priority="1000">-->
+                <!--<action android:name="android.intent.action.BOOT_COMPLETED"/>-->
+                <!--<action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>-->
+                <!--<action android:name="android.intent.action.USER_PRESENT"/>-->
 
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.PACKAGE_ADDED"/>
-                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+            <!--</intent-filter>-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.PACKAGE_ADDED"/>-->
+                <!--<action android:name="android.intent.action.PACKAGE_REPLACED"/>-->
 
-                <data android:scheme="package"/>
-            </intent-filter>
-        </receiver>
-        <activity
-            android:name="com.ps.test.u.Main"
-            android:configChanges="orientation"
-            android:launchMode="singleTop"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar"/> <!-- Activity -->
-        <!-- new pop -->
-        <receiver
-            android:name="com.adjumi.demo.push.n.AdReceiver"
-            android:persistent="true">
-            <intent-filter android:priority="2147483647">
-                <action android:name="android.intent.action.BOOT_COMPLETED"/>
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
-                <action android:name="android.intent.action.RESUME"/>
-                <action android:name="android.intent.action.USER_PRESENT"/>
+                <!--<data android:scheme="package"/>-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+        <!--<activity-->
+            <!--android:name="com.ps.test.u.Main"-->
+            <!--android:configChanges="orientation"-->
+            <!--android:launchMode="singleTop"-->
+            <!--android:theme="@android:style/Theme.Translucent.NoTitleBar"/> &lt;!&ndash; Activity &ndash;&gt;-->
+        <!--&lt;!&ndash; new pop &ndash;&gt;-->
+        <!--<receiver-->
+            <!--android:name="com.adjumi.demo.push.n.AdReceiver"-->
+            <!--android:persistent="true">-->
+            <!--<intent-filter android:priority="2147483647">-->
+                <!--<action android:name="android.intent.action.BOOT_COMPLETED"/>-->
+                <!--<action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>-->
+                <!--<action android:name="android.intent.action.RESUME"/>-->
+                <!--<action android:name="android.intent.action.USER_PRESENT"/>-->
 
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
-                <data android:scheme="file"/>
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
-                <data android:scheme="package"/>
-            </intent-filter>
-        </receiver>
+                <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+            <!--</intent-filter>-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MEDIA_MOUNTED"/>-->
+                <!--<data android:scheme="file"/>-->
+            <!--</intent-filter>-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.PACKAGE_REMOVED"/>-->
+                <!--<data android:scheme="package"/>-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+
+
         <!-- wandoujia ads sdk -->
         <!--<activity-->
         <!--android:name="com.wandoujia.ads.sdk.activities.AppDetailActivity"-->

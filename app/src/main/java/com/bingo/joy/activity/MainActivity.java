@@ -19,19 +19,15 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TableLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-import cn.domob.android.ads.Updater;
-
-import com.adjumi.demo.push.ut.AdManager;
-import com.ads.tool.AdsConstants;
+//import cn.domob.android.ads.Updater;
+//
+//import com.adjumi.demo.push.ut.AdManager;
 import com.bingo.joy.R;
-import com.bingo.util.Preference;
-//import com.wandoujia.ads.sdk.Ads;
-import com.ps.test.Manager;
+//import com.ps.test.Manager;
 
 public class MainActivity extends Activity {
 	/** Called when the activity is first created. */
@@ -42,7 +38,7 @@ public class MainActivity extends Activity {
 
 	int i = 0;
 
-	Manager manager;
+//	Manager manager;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -69,7 +65,7 @@ public class MainActivity extends Activity {
 	private void reminder() {
 		new Thread(new Runnable() {
 			public void run() {
-				Updater.checkUpdate(MainActivity.this, "56OJ2tEouNwgLiceMK");
+//				Updater.checkUpdate(MainActivity.this, "56OJ2tEouNwgLiceMK");
 			}
 		}).start();
 	}
@@ -87,28 +83,28 @@ public class MainActivity extends Activity {
 
 	private void initPop() {
 		/* 开启一个新线程，在新线程里执行耗时的方法 */
-		new Thread(new Runnable() {
-			public void run() {
-				manager = Manager.getInstance(getApplicationContext(),
-						"98966546-5f44-430e-a03f-3e74286694dc", 1);
-				// 配置插屏
-				manager.c(6, 6, false);
-				// 配置外插屏
-				// manager.o(true, false, 20, false, true, true);
-				// 耗时的方法
-			}
-		}).start();
+//		new Thread(new Runnable() {
+//			public void run() {
+//				manager = Manager.getInstance(getApplicationContext(),
+//						"98966546-5f44-430e-a03f-3e74286694dc", 1);
+//				// 配置插屏
+//				manager.c(6, 6, false);
+//				// 配置外插屏
+//				// manager.o(true, false, 20, false, true, true);
+//				// 耗时的方法
+//			}
+//		}).start();
 
 	}
 
 	public void showPop(View v) {
 		/* 开启一个新线程，在新线程里执行耗时的方法 */
-		new Thread(new Runnable() {
-			public void run() {
-				manager.s(MainActivity.this);
-				// 耗时的方法
-			}
-		}).start();
+//		new Thread(new Runnable() {
+//			public void run() {
+//				manager.s(MainActivity.this);
+//				// 耗时的方法
+//			}
+//		}).start();
 	}
 
 //	private void showBannerAd() {

@@ -33,8 +33,6 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.ads.tool.AdsConstants;
-import com.ads.tool.NetHelper;
 import com.bingo.joy.R;
 import com.bingo.joy.adapter.SortAdapter;
 import com.bingo.joy.db.DBSayingManager;

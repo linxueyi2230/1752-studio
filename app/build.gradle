@@ -8,7 +8,7 @@ android {
         applicationId "com.bingo.joy"
         minSdkVersion 17
         targetSdkVersion 27
-        versionCode 2
+        versionCode 3
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -56,9 +56,9 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation "com.android.support:recyclerview-v7:27.1.1"
     testImplementation 'junit:junit:4.12'
-    implementation files('src/main/libs/domob_android_sdk.jar')
-    implementation files('src/main/libs/jmpop-release.jar')
-    implementation files('src/main/libs/jmpush-release.jar')
+//    implementation files('src/main/libs/domob_android_sdk.jar')
+//    implementation files('src/main/libs/jmpop-release.jar')
+//    implementation files('src/main/libs/jmpush-release.jar')
     implementation files('src/main/libs/libammsdk.jar')
     implementation files('src/main/libs/mta-sdk-1.6.2.jar')
     implementation files('src/main/libs/open_sdk_r5276.jar')

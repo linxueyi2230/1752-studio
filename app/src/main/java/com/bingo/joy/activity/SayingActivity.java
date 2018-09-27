@@ -20,12 +20,10 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.ads.tool.AdsConstants;
 import com.bingo.joy.R;
 import com.bingo.joy.db.DBSayingManager;
 import com.bingo.joy.model.Saying;
