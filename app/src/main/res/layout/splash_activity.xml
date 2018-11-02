@@ -4,6 +4,6 @@
 	android:id="@+id/splash_container"
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent"
-	android:background="@drawable/fun"
+	android:background="@drawable/launchimage"
 	android:orientation="vertical" >
 </RelativeLayout>

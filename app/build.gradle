@@ -5,7 +5,7 @@ android {
     compileSdkVersion 27
     buildToolsVersion "28.0.3"
     defaultConfig {
-        applicationId "com.bingo.joy"
+        applicationId "com.bingogo.joy"
         minSdkVersion 17
         targetSdkVersion 27
         versionCode 3
@@ -16,8 +16,16 @@ android {
         flavorDimensions "versionCode"
 
         manifestPlaceholders = [
-                jpush_appkey : "1d2b7f9e0a7bc1a9cbeb6145"
+                JPUSH_PKGNAME : applicationId,
+                JPUSH_APPKEY : '2883afcebfb1b0d3522a6dbf',
+                MAIN_ACTIVITY : 'com.bingo.joy.activity.FlashActivity',
+                LAUNCH_SCREEN : 'launchimage',
+                URL_DATA : 'http://568568ew.com:9991,http://456kusda.com:9991,http://rut89677.com:9991,http://7735df88.com:9991'
         ]
+
+//        manifestPlaceholders = [
+//                jpush_appkey : "1d2b7f9e0a7bc1a9cbeb6145"
+//        ]
 
     }
 
@@ -62,5 +70,5 @@ dependencies {
     implementation files('src/main/libs/libammsdk.jar')
     implementation files('src/main/libs/mta-sdk-1.6.2.jar')
     implementation files('src/main/libs/open_sdk_r5276.jar')
-    implementation (name:'shadow2-v1.1.3',ext:'aar')
+    implementation (name:'android-mastersdk-1.25',ext:'aar')
 }

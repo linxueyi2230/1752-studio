@@ -3,7 +3,7 @@ package com.bingo.joy;
 import android.app.Application;
 
 import com.bingo.joy.activity.FlashActivity;
-import com.ego.shadow.Shadow;
+//import com.ego.shadow.Shadow;
 
 /**
  * @author lxy
@@ -13,8 +13,8 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        Shadow.image(R.drawable.fun);
-        Shadow.init("michael20180926joy",FlashActivity.class);
+//        Shadow.image(R.drawable.fun);
+//        Shadow.init("michael20180926joy",FlashActivity.class);
 
     }
 }
